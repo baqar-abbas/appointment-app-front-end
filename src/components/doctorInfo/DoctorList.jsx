@@ -87,7 +87,7 @@ function DoctorList() {
                 .map((doctor) => (
                   <Link key={doctor.id} to={`/doctor_details/${doctor.id}`} className="col-12 col-md-4">
                     <div key={doctor.id} className="carousel-item">
-                      <img src={doctor.photo} alt={doctor.name} className="doctor-photo rounded-circle" />
+                      <img src={doctor.photo} alt={doctor.name} className="doctor-photo rounded-circle" style={{ width: '50%' }} />
                       <div>
                         <h5>{doctor.name}</h5>
                         <p>{doctor.specialization}</p>

@@ -70,7 +70,7 @@ function HomeDoctors() {
             .slice(currentGroupIndex * groupSize, (currentGroupIndex + 1) * groupSize)
             .map((doctor) => (
               <div key={doctor.id} className="card d-flex align-items-center">
-                <img src={doctor.photo} alt={doctor.name} className="rounded-circle" />
+                <img src={doctor.photo} alt={doctor.name} className="rounded-circle" style={{ width: '50%' }} />
                 <div className="card-body">
                   <p className="card-title">{doctor.name}</p>
                   <p className="card-text">{doctor.specialization}</p>
